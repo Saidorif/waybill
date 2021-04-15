@@ -1,0 +1,36 @@
+{
+    "site_name": "Главная страница",
+    "menu":{
+        "reestr": "Реестр",
+        "about_lisence": "О лицензии",
+        "send_request": "Отправить заявку",
+        "auth": "Авторизация"
+    },
+    "admin_menu": {
+        "admin_panel": "Админ панель",
+        "my_requests":"Мои заявки",
+        "change_pass":"Изменить пароль",
+        "my_payments":"Мои платежи",
+        "my_license":"Мои лицензии",
+        "license_list":"Список лицензии",
+        "requests":"Заявки",
+        "payments":"Платежи",
+        "employee":"Сотрудники",
+        "position":"Должность",
+        "settings":"Настройки",
+        "setting":"Настройка",
+        "my_info":"Мои данные"
+    },
+    "contacts_page":{
+        "title": "Bizga o'z <span>taklif</span> va <span>e'trozlaringizni </span> qoldiring!",
+        "sub_title": "Taklif va e'trozlaringizni formada qoldiring, biz sizning takliflarinigzni va e'trozlarinigzni o'rganib chiqib pochtangiz orqali batafsil ma'lumot beramiza yoki qo'ng'iroq qilamiz agar raqamingizni qoldirsangiz ",
+        "appeal_type": "Murojat turi",
+        "surname":"Familiya",
+        "name":"Ism",
+        "middlename":"Sharifi",
+        "phone":"Telefon raqam",
+        "file_upload":"Faylni yuklash",
+        "text":"Xabar matni",
+        "send": "Yuvorish"
+    }
+}
