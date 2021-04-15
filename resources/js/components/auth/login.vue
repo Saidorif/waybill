@@ -169,63 +169,6 @@ export default {
         this.requiredLoginInput = true;
       }
     },
-    async onSignUp() {
-      if (
-        this.signUp.name != "" &&
-        this.signUp.city != "" &&
-        this.signUp.bank_number != "" &&
-        this.signUp.oked != "" &&
-        this.signUp.mfo != "" &&
-        this.signUp.inn != "" &&
-        this.signUp.phone != "" &&
-        this.signUp.address != "" &&
-        this.signUp.company_name != "" &&
-        this.signUp.license_number != "" &&
-        this.signUp.password != "" &&
-        this.signUp.confirm_password != "" &&
-        this.signUp.region_id != "" &&
-        this.signUp.area_id != "" &&
-        this.signUp.email != "" &&
-        this.signUp.surname != "" &&
-        this.signUp.middlename != "" &&
-        this.signUp.email != "" &&
-        this.checkPassword == false
-      ) {
-        await this.register(this.signUp);
-        if (this.getRegisterError.success) {
-          toast.fire({
-            type: "success",
-            icon: "success",
-            title:
-              "Ваш пароль отправлен на ваш e-mail. проверьте пожалуйста свою электронную почту!",
-          });
-          this.signUp.region_id = "";
-          this.signUp.area_id = "";
-          this.signUp.name = "";
-          this.signUp.city = "";
-          this.signUp.bank_number = "";
-          this.signUp.oked = "";
-          this.signUp.mfo = "";
-          this.signUp.inn = "";
-          this.signUp.phone = "";
-          this.signUp.address = "";
-          this.signUp.company_name = "";
-          this.signUp.license_number = "";
-          this.signUp.password = "";
-          this.signUp.confirm_password = "";
-          this.signUp.email = "";
-          this.signUp.license_type = "";
-          this.signUp.license_date = "";
-          this.signUp.trusted_person = "";
-          this.signUp.surname = "";
-          this.signUp.middlename = "";
-        } else {
-          this.errorMsgSign = this.getRegisterError.message;
-        }
-      } else {
-        this.requiredInput = true;
-      }
-    },
   },
 };
 </script>

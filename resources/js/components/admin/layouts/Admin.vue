@@ -53,14 +53,6 @@
               </p>
             </router-link>
           </li>
-          <li class="nav-item" v-if="$can('index', 'ClientAccessController')">
-            <router-link class="nav-link" to="/crm/apply">
-              <i class="peIcon fas fa-vote-yea"></i>
-              <p>
-                Доступ
-              </p>
-            </router-link>
-          </li>
           <li class="nav-item" v-if="$can('carrier', 'UserController')">
             <router-link class="nav-link" to="/crm/client">
               <i class="peIcon pe-7s-users"></i>
@@ -69,182 +61,11 @@
               </p>
             </router-link>
           </li>
-          <li class="nav-item" v-if="$can('index', 'DirectionController')">
-            <router-link class="nav-link" to="/crm/direction">
-              <i class="peIcon fas fa-route"></i>
-              <p>
-                Направления
-              </p>
-            </router-link>
-          </li>
-          <li class="nav-item" v-if="$can('index', 'DirectionController')">
-            <router-link class="nav-link" to="/crm/direction-user">
-              <i class="peIcon fas fa-route"></i>
-              <p>
-                Направления <small style="padding:2px 6px;background: #74b303;border-radius:3px;">user</small>
-              </p>
-            </router-link>
-          </li>
-          <li class="nav-item has-treevie" v-if="$can('listTarifApprove', 'DirectionController')">
-            <a href="#" class="nav-link" >
-              <i class="peIcon fas fa-clipboard-check"></i>
-              <p>
-                Подтверждения
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treevie">
-              <li class="nav-item">
-                <router-link class="nav-link" to="/crm/confirm-titul">
-                  <p>
-                    Титуль
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/crm/confirm-timing">
-                  <p>
-                    Хронометраж
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/crm/confirm-scheme">
-                  <p>
-                    Схема
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/crm/confirm-schedule">
-                  <p>
-                    График движения
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item" v-if="$can('listTarifApprove', 'DirectionController')">
-                <router-link class="nav-link" to="/crm/confirm-tarif">
-                  <p>
-                    Тариф
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item" v-if="$can('listTarifApprove', 'DirectionController')">
-                <router-link class="nav-link" to="/crm/confirm-confirmdemand">
-                  <p>
-                    Талаб
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item" v-if="$can('announceTender', 'TenderController')">
-                <router-link class="nav-link" to="/crm/confirm-tender">
-                  <p>
-                    Тендер
-                  </p>
-                </router-link>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item" v-if="$can('announceTender', 'TenderController')">
-            <router-link class="nav-link" to="/crm/tenderannounce">
-              <i class="peIcon fas fa-bullhorn"></i>
-              <p>
-                Объявить тендер
-              </p>
-            </router-link>
-          </li>
-          <li class="nav-item" v-if="$can('index', 'TenderController')">
-            <router-link class="nav-link" to="/crm/tenderuser">
-              <i class="peIcon fas fa-file"></i>
-              <p>
-                Активные тендеры
-              </p>
-            </router-link>
-          </li>
-          <li class="nav-item has-treevie" v-if="$can('completedTenders', 'TenderController')">
-            <a href="#" class="nav-link">
-              <span class="peIcon fas fa-file" style="font-size: 20px;"></span>
-              <p>
-                Итоги тендеров
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treevie">
-              <li class="nav-item" v-if="$can('completedTenders', 'TenderController')">
-                <router-link class="nav-link" to="/crm/completed-tenders">
-                  <p>
-                    Завершенные тендеры
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item" v-if="$can('checkTenders', 'TenderController')">
-                <router-link class="nav-link" to="/crm/check-control">
-                  <p>
-                    Проверка тендеры
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item" v-if="$can('checkTenders', 'TenderController')">
-                <router-link class="nav-link" to="/crm/protocol-list">
-                  <p>
-                    Протокол
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item" v-if="$can('checkTenders', 'TenderController')">
-                <router-link class="nav-link" to="/crm/contract-list">
-                  <p>
-                    Договора
-                  </p>
-                </router-link>
-              </li>
-            </ul>
-          </li>
-             <li class="nav-item">
-                <router-link class="nav-link" to="/crm/completed-tenders-user">
-                  <p>
-                    Завершенные тендеры
-                     <small style="padding:2px 6px;background: #74b303;border-radius:3px;">user</small>
-                  </p>
-                </router-link>
-              </li>
           <li class="nav-item" v-if="$can('index', 'PositionController')">
             <router-link class="nav-link" to="/crm/position">
               <i class="peIcon pe-7s-graph1"></i>
               <p>
                 Должность
-              </p>
-            </router-link>
-          </li>
-          <li class="nav-item" v-if="$can('index', 'ApplicationController')">
-            <router-link class="nav-link" to="/crm/tender/application">
-              <i class="peIcon fas fa-file"></i>
-              <p>
-                Заявки
-              </p>
-            </router-link>
-          </li>
-          <li class="nav-item" v-if="$can('index', 'PaymentController')">
-            <router-link class="nav-link" to="/crm/payment">
-              <i class="peIcon fas fa-money-bill-alt"></i>
-              <p>
-                Платежи
-              </p>
-            </router-link>
-          </li>
-          <li class="nav-item" v-if="$can('index', 'ProtocolController')">
-            <router-link class="nav-link" to="/crm/oldprotocol">
-              <i class="peIcon fas fa-file"></i>
-              <p>
-                Старые протоколы 
-              </p>
-            </router-link>
-          </li>
-          <li class="nav-item" v-if="$can('index', 'ContractController')">
-            <router-link class="nav-link" to="/crm/oldcontract"> 
-              <i class="peIcon fas fa-file-alt"></i>
-              <p>
-                Старые контракты 
               </p>
             </router-link>
           </li>
@@ -263,40 +84,6 @@
                 Сотрудники
               </p>
             </router-link>
-          </li>
-          <!-- <li class="nav-item" v-if="$can('index', 'EmployeeController')">
-            <router-link class="nav-link" to="/crm/complaint-list-user">
-              <i class="peIcon fas fa-comment"></i>
-              <p>
-                Обращения <small style="padding:2px 6px;background: #74b303;border-radius:3px;">user</small>
-              </p>
-            </router-link>
-          </li> -->
-          <li class="nav-item has-treevie" v-if="$can('index', 'ComplaintCategoryController')">
-            <a href="#" class="nav-link">
-              <span class="peIcon fas fa-comment" style="font-size: 20px;"></span>
-              <p>
-                Обращения
-                <span class="badge badge-primary" v-if="getComplaintLength">{{getComplaintLength}}</span>
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treevie">
-              <li class="nav-item" v-if="$can('index', 'ComplaintCategoryController')">
-                <router-link class="nav-link" to="/crm/complaint-list">
-                  <p>
-                    Список обращения
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item" v-if="$can('index', 'ComplaintController')">
-                <router-link class="nav-link" to="/crm/complaint">
-                  <p>
-                    Вариант обращения
-                  </p>
-                </router-link>
-              </li>
-            </ul>
           </li>
           <li class="nav-item has-treevie">
             <a href="#" class="nav-link">
@@ -320,77 +107,6 @@
                   <i class="peIcon fas fa-globe-europe"></i>
                   <p>
                     Регион / Город
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item" v-if="$can('index', 'StationController')">
-                <router-link class="nav-link" to="/crm/station">
-                  <i class="peIcon fas fa-bus"></i>
-                  <p>
-                    Автостанция
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item" v-if="$can('index', 'DirectionTypeController')">
-                <router-link class="nav-link" to="/crm/typeofdirection">
-                  <i class="peIcon fas fa-border-style"></i>
-                  <p>
-                    Тип направления
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item" v-if="$can('index', 'TarifCityController')">
-                <router-link class="nav-link" to="/crm/tarifcity">
-                  <i class="peIcon fas fa-border-style"></i>
-                  <p>
-                    Тариф ШЙ
-                  </p>
-                </router-link>
-              </li>
-              <li class="nav-item has-treevie" v-if="$can('index', 'BusTypeController')">
-                <a href="#" class="nav-link" >
-                  <i class="peIcon fas fa-bus"></i>
-                  <p>
-                    Автобуса
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treevie">
-                    <li class="nav-item" v-if="$can('index', 'BusTypeController')">
-                        <router-link class="nav-link" to="/crm/typeofbus">
-                            <p>
-                                Категория  автобуса
-                            </p>
-                        </router-link>
-                    </li>
-                    <li class="nav-item" v-if="$can('index', 'TClassController')">
-                        <router-link class="nav-link" to="/crm/busclass">
-                            <p>
-                                Класс автобуса
-                            </p>
-                        </router-link>
-                    </li>
-                    <li class="nav-item" v-if="$can('index', 'BusMarkaController')">
-                        <router-link class="nav-link" to="/crm/busbrand">
-                        <p>
-                            Марка автобуса
-                        </p>
-                        </router-link>
-                    </li>
-                    <li class="nav-item" v-if="$can('index', 'BusModelController')">
-                        <router-link class="nav-link" to="/crm/busmodel">
-                        <p>
-                            Модель автобуса
-                        </p>
-                        </router-link>
-                    </li>
-                </ul>
-              </li>
-              <li class="nav-item" v-if="$can('index', 'ConditionalSignController')">
-                <router-link class="nav-link" to="/crm/conditionalsign">
-                  <i class="peIcon fas fa-sign"></i>
-                  <p>
-                    Условные символы
                   </p>
                 </router-link>
               </li>
