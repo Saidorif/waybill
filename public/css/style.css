@@ -1,5 +1,5 @@
 .time_counter {
-  background-color: #164a13;
+  background-color: #032901;
   border-radius: 5px;
   color: white;
   font-weight: 600;
@@ -13,12 +13,12 @@
 }
 
 .main-sidebar {
-  background: #164a13;
+  background: #032901;
 }
 
 .main-header {
   box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03), 0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03), 0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05), 0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
-  background: #164a13;
+  background: #032901;
   color: #fff;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .card_with_tabs .card-header .passport_tab .nav.nav-tabs a.active {
-  color: #164a13;
+  color: #032901;
 }
 
 .card_with_tabs .card-header .passport_tab .nav.nav-tabs a.active::after {
@@ -93,7 +93,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: #164a13;
+  background: #032901;
   border-radius: 4px;
   z-index: 1;
 }
@@ -110,7 +110,7 @@
 }
 
 .table thead th {
-  border-bottom: 2px solid #164a13;
+  border-bottom: 2px solid #032901;
 }
 
 .peIcon.pe-7s-back {
@@ -124,7 +124,7 @@
   line-height: 33px;
   font-size: 22px;
   transition: color 300ms;
-  color: #164a13;
+  color: #032901;
 }
 
 .nav-sidebar .nav-item > .nav-link .peIcon {
@@ -147,7 +147,7 @@
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background: #50b157 !important;
+  background: #487b4c !important;
   font-weight: bold;
   font-weight: bold;
 }
@@ -189,12 +189,12 @@
   padding-bottom: 0.25rem;
   padding-left: 0.25rem;
   vertical-align: middle;
-  border-top: 1px solid #164a13;
+  border-top: 1px solid #032901;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #164a13;
+  border: 1px solid #032901;
 }
 
 .table-hover tbody tr:hover {
@@ -265,8 +265,8 @@
 .btn.btn-primary.back_btn.active,
 .btn.btn-primary {
   color: white;
-  background: #164a13;
-  border: 1px solid #164a13;
+  background: #032901;
+  border: 1px solid #032901;
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
@@ -282,12 +282,12 @@
 }
 
 .btn-outline-info {
-  border: 1px solid #164a13;
-  color: #164a13;
+  border: 1px solid #032901;
+  color: #032901;
 }
 
 .btn-outline-info i {
-  color: #164a13;
+  color: #032901;
 }
 
 .btn.btn-primary span {
@@ -445,7 +445,7 @@
 
 .form-control {
   background: #FFFFFF;
-  border: 1px solid #164a13;
+  border: 1px solid #032901;
   box-sizing: border-box;
   border-radius: 5px;
   font-style: normal;
@@ -1329,14 +1329,14 @@ hr {
   position: absolute;
   height: 2px;
   width: 0%;
-  background-color: #164a13;
+  background-color: #032901;
   left: 2px;
   transition: 0.3s all ease-in-out;
   bottom: -5px;
 }
 
 .main_header .menu_list li > a:hover {
-  color: #164a13;
+  color: #032901;
 }
 
 .main_header .menu_list li > a.active:before,
@@ -1347,7 +1347,7 @@ hr {
 .btn_login {
   line-height: 40px;
   border-radius: 30px;
-  background-color: #164a13;
+  background-color: #032901;
   padding-left: 30px;
   padding-right: 30px;
   color: #fff;
@@ -1531,19 +1531,19 @@ hr {
 }
 
 .input_group_with_label .form-control:focus {
-  border-color: #164a13;
+  border-color: #032901;
 }
 
 .btn_blue_bd_0 {
   line-height: 40px;
   border-radius: 0px;
-  background-color: #164a13;
+  background-color: #032901;
   padding-left: 50px;
   padding-right: 50px;
   color: #fff;
   font-weight: 600;
   font-family: "Poppins-SemiBold";
-  border: 1px solid #164a13;
+  border: 1px solid #032901;
 }
 
 .contact_block .btn_blue_bd_0 {
@@ -1686,11 +1686,11 @@ hr {
 .btn_bd_blue {
   line-height: 36px;
   border-radius: 30px;
-  border: 1px solid #164a13;
+  border: 1px solid #032901;
   background: #fff;
   padding-left: 30px;
   padding-right: 30px;
-  color: #164a13;
+  color: #032901;
   font-weight: 600;
   font-family: "Poppins-Regular";
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
@@ -1699,7 +1699,7 @@ hr {
 
 .btn_bd_blue:hover {
   text-decoration: none;
-  background: #164a13;
+  background: #032901;
   color: #fff;
 }
 
@@ -1708,7 +1708,7 @@ hr {
   top: -30px;
   font-family: "Poppins-Regular";
   white-space: nowrap;
-  color: #164a13;
+  color: #032901;
 }
 
 .btn_register_block {
@@ -1826,7 +1826,7 @@ hr {
 
 .tender_card {
   width: calc(100% / 4 - 30px);
-  background: #164a13;
+  background: #032901;
   margin-top: 30px;
   overflow: hidden;
   border-radius: 20px;
@@ -2128,6 +2128,6 @@ hr {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background: #164a13;
+  background: #032901;
 }
 
