@@ -21,6 +21,7 @@ import {region} from "./region.module"
 import {area} from "./area.module"
 import {find} from "./find.module"
 import { page } from "./page.module"
+import { client } from "./client.module"
 import { setting } from "./setting.module"
 
 import { TokenService } from './../services/storage.service'
@@ -50,6 +51,7 @@ const store = new Vuex.Store(
 			area,
 			find,
             page,
+            client,
             setting,
 		},
 		state:{
@@ -121,7 +123,6 @@ const store = new Vuex.Store(
 			},
 			async profileUser({commit}){
 				try{
-					console.log('ok')
 					const userInfo = await UserService.profileUser();
 					await commit('loginSuccess', userInfo.data);
 					return true

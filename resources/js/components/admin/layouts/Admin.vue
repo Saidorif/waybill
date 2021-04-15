@@ -24,7 +24,7 @@
     <!-- Brand Logo -->
     <router-link class="brand-link" to="/crm">
       <span class="brand-text font-weight-light">
-        e-TENDER
+        e-Waybill
       </span>
     </router-link>
 
@@ -66,14 +66,6 @@
               <i class="peIcon pe-7s-graph1"></i>
               <p>
                 Должность
-              </p>
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/crm/setting">
-              <i class="peIcon fas fa-cog"></i>
-              <p>
-                Настройка системы
               </p>
             </router-link>
           </li>
@@ -189,11 +181,9 @@ export default {
   },
   computed: {
     ...mapGetters(['getUser']),
-    ...mapGetters('complaint',['getComplaintLength']),
   },
   async mounted(){
     await this.profileUser()
-    await this.actionComplaintLength()
     $('.has-treevie a').on('click', function(e){
         e.preventDefault();
         $(this).parent('.has-treevie').toggleClass('menu-opens')
@@ -201,7 +191,6 @@ export default {
   },
   methods: {
     ...mapActions(['logout','profileUser']),
-    ...mapActions('complaint',['actionComplaintLength']),
     logoutProfile(){
       this.logout();
     },

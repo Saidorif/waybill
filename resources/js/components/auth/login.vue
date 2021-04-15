@@ -1,12 +1,9 @@
 <template>
   <div class="card lognCard">
     <Loader v-if="laoding"/>
-    <Header/>
     <div class="card-body login-card-body">
       <div class="form_content jv_login_block">
         <div class="flagbg">
-          <h6>Tender platformasiga kirish.</h6>
-          <p> Agar siz ra'yxatdan o'tmagan bo'lsangiz iltimos, ro'yxatdan o'ting.</p>
         </div>
         <div class="jv_form_block">
           <div class="logo_login">
@@ -26,8 +23,7 @@
             </div>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn_register_block">
-                <router-link to="/send-apply" tag="a" class="btn_forgot text-success">Получить доступ!</router-link>
-                <router-link to="/register" class="btn_bd_blue">Ro'yxatdan o'tish</router-link>
+                <!-- <router-link to="/send-apply" tag="a" class="btn_forgot text-success">Получить доступ!</router-link> -->
               </div>
                 <button type="submit" class="btn_login">
                   Kirish

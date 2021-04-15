@@ -1,5 +1,5 @@
 .time_counter{
-    background-color: #292666;
+    background-color: #164a13;
     border-radius: 5px;
     color: white;
     font-weight: 600;
@@ -14,11 +14,11 @@
     background: #fefbff;
 }
 .main-sidebar{
-  background: #292666;
+  background: #164a13;
 }
 .main-header{
   box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
-  background: #292666;
+  background: #164a13;
   color: #fff;
 }
 
@@ -73,7 +73,7 @@
     overflow: auto;
 }
 .card_with_tabs .card-header .passport_tab .nav.nav-tabs  a.active{
-    color: #292666;
+    color: #164a13;
 }
 .card_with_tabs .card-header .passport_tab .nav.nav-tabs  a.active::after{
     content: "";
@@ -82,7 +82,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: #292666;
+    background: #164a13;
     border-radius: 4px;
     z-index: 1;
 }
@@ -97,7 +97,7 @@
     height: 2px;
 }
 .table thead th{
-    border-bottom: 2px solid #292666;
+    border-bottom: 2px solid #164a13;
 }
 
 .peIcon.pe-7s-back{
@@ -110,7 +110,7 @@
   line-height: 33px;
   font-size: 22px;
   transition: color 300ms;
-  color: #292666;
+  color: #164a13;
 }
 .nav-sidebar .nav-item>.nav-link .peIcon{
     color: #fff;
@@ -127,7 +127,7 @@
 .nav-pills .nav-link:not(.active):hover, .nav-pills .nav-link:not(.active):hover .peIcon,
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
   color: #fff;
-  background: #5550b1 !important;
+  background: #50b157 !important;
   font-weight: bold;
   font-weight: bold;
 }
@@ -162,10 +162,10 @@
     padding-bottom: 0.25rem;
     padding-left: 0.25rem;
     vertical-align: middle;
-    border-top: 1px solid #292666;
+    border-top: 1px solid #164a13;
 }
 .table-bordered th, .table-bordered td{
-    border: 1px solid #292666;
+    border: 1px solid #164a13;
 }
 .table-hover tbody tr:hover{
     background-color: #e0f3ff;
@@ -226,8 +226,8 @@
 .btn.btn-primary.back_btn.active,
 .btn.btn-primary{
     color: white;
-    background: #292666;
-    border: 1px solid #292666;
+    background: #164a13;
+    border: 1px solid #164a13;
     font-size: 16px;
     line-height: 20px;
     font-weight: bold;
@@ -241,11 +241,11 @@
     margin-right: 5px;
 }
 .btn-outline-info{
-    border: 1px solid #292666;
-    color: #292666;
+    border: 1px solid #164a13;
+    color: #164a13;
 }
 .btn-outline-info i{
-    color: #292666;
+    color: #164a13;
 }
 .btn.btn-primary span{
     width: auto;
@@ -386,7 +386,7 @@
 }
 .form-control{
     background: #FFFFFF;
-    border: 1px solid #292666;
+    border: 1px solid #164a13;
     box-sizing: border-box;
     border-radius: 5px;
     font-style: normal;
@@ -1086,7 +1086,7 @@ hr{
     position: absolute;
     height: 2px;
     width: 0%;
-    background-color: #292666;
+    background-color: #164a13;
     left: 2px;
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
@@ -1094,7 +1094,7 @@ hr{
     bottom: -5px;
 }
 .main_header .menu_list li > a:hover {
-    color: #292666;
+    color: #164a13;
 }
 .main_header .menu_list li > a.active:before,
 .main_header .menu_list li > a:hover:before {
@@ -1103,7 +1103,7 @@ hr{
 .btn_login{
     line-height: 40px;
     border-radius: 30px;
-    background-color: #292666;
+    background-color: #164a13;
     padding-left: 30px;
     padding-right: 30px;
     color: #fff;
@@ -1266,18 +1266,18 @@ hr{
     min-height: 40px;
 }
 .input_group_with_label .form-control:focus{
-    border-color: #292666;
+    border-color: #164a13;
 }
 .btn_blue_bd_0{
     line-height: 40px;
     border-radius: 0px;
-    background-color: #292666;
+    background-color: #164a13;
     padding-left: 50px;
     padding-right: 50px;
     color: #fff;
     font-weight: 600;
     font-family: "Poppins-SemiBold";
-    border: 1px solid #292666;
+    border: 1px solid #164a13;
 }
 .contact_block .btn_blue_bd_0{
     margin-left: auto;
@@ -1290,6 +1290,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #e4f7e3;
 }
 .lognCard .login-card-body::after{
     content: "";
@@ -1314,14 +1315,16 @@ hr{
     align-items: stretch;
     overflow: hidden;
     max-width: 1000px;
+    border:5px solid #cfe6d3;
 }
 .jv_login_block .flagbg{
      padding: 30px;
      width: 45%;
-    //  background-image: url(/img/uzbflag.jpg);
-     background-size: auto 100%;
+    background-image: url(/img/logoUz.png);
+     background-size: auto 78%;
      background-repeat: no-repeat;
-     background-position: center;
+    background-position-y: 55%;
+     // background-position: center;
      position: relative;
      display: flex;
      flex-direction: column;
@@ -1356,7 +1359,7 @@ hr{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(41, 38, 102, .8);
+    background: rgb(140 152 148 / 80%);
     z-index: 1;
 }
 .jv_login_block .flagbg h6{
@@ -1400,11 +1403,11 @@ hr{
 .btn_bd_blue{
     line-height: 36px;
     border-radius: 30px;
-    border: 1px solid #292666;
+    border: 1px solid #164a13;
     background: #fff;
     padding-left: 30px;
     padding-right: 30px;
-    color: #292666;
+    color: #164a13;
     font-weight: 600;
     font-family: "Poppins-Regular";
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.15),0 1px 3px 1px rgba(0,0,0,.15)!important;
@@ -1412,7 +1415,7 @@ hr{
 }
 .btn_bd_blue:hover{
     text-decoration: none;
-    background: #292666;
+    background: #164a13;
     color: #fff;
 }
 .btn_register_block .btn_forgot{
@@ -1420,7 +1423,7 @@ hr{
     top: -30px;
     font-family: "Poppins-Regular";
     white-space: nowrap;
-    color: #292666;
+    color: #164a13;
 }
 .btn_register_block{
     position: relative;
@@ -1536,7 +1539,7 @@ hr{
 }
 .tender_card{
     width: calc(100% / 4 - 30px);
-    background: #292666;
+    background: #164a13;
     margin-top: 30px;
     overflow: hidden;
     border-radius: 20px;
@@ -1784,5 +1787,5 @@ hr{
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link{
     color: #fff;
-    background: #292666;
+    background: #164a13;
 }

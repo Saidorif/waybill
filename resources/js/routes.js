@@ -32,6 +32,11 @@ import Position from './components/admin/position/Position'
 import AddPosition from './components/admin/position/AddPosition'
 import EditPosition from './components/admin/position/EditPosition'
 
+// client
+import Client from './components/admin/client/Client'
+import AddClient from './components/admin/client/AddClient'
+import EditClient from './components/admin/client/EditClient'
+
 // controller
 import Conts from './components/admin/conts/Conts'
 import AddConts from './components/admin/conts/AddConts'
@@ -181,6 +186,26 @@ const router = new Router({
 					}
 				},
 				{
+					path:'client',
+					component:Client,
+					meta:{
+						action:'carrier',
+						subject:'UserController'
+					}
+				},
+				{
+					path:'client/add',
+					component:AddClient,
+				},
+				{
+					path:'client/edit/:clientId',
+					component:EditClient,
+					meta:{
+						action:'carrierEdit',
+						subject:'UserController'
+					}
+				},
+				{
 					path:'conts',
 					component:Conts,
 					meta:{
@@ -284,55 +309,54 @@ const router = new Router({
 		},
 		{
 			path:'/',
-			name:'master',
+			name:'login',
 			components:{
-				default:Master,
+				default:Login,
 			},
-			redirect:'/login',
-			children:[
-				{
-					path:'/',
-					name:'home',
-					components:{
-						default:Home,
-					},
-				},
-				{
-					path:'/login',
-					name:'login',
-					components:{
-						default:Login,
-					},
-				},
-				{
-					path:'/register',
-					name:'register',
-					components:{
-						default:Register,
-					},
-				},
-				{
-					path:'/forgot',
-					name:'forgot',
-					components:{
-						default:Forgot,
-					},
-				},
-				{
-					path:'/contact',
-					name:'contact',
-					components:{
-						default:Contact,
-					},
-				},
-				{
-					path:'/about',
-					name:'about',
-					components:{
-						default:About,
-					},
-				},
-			]
+			// children:[
+			// 	{
+			// 		path:'/',
+			// 		name:'home',
+			// 		components:{
+			// 			default:Home,
+			// 		},
+			// 	},
+			// 	{
+			// 		path:'/login',
+			// 		name:'login',
+			// 		components:{
+			// 			default:Login,
+			// 		},
+			// 	},
+			// 	{
+			// 		path:'/register',
+			// 		name:'register',
+			// 		components:{
+			// 			default:Register,
+			// 		},
+			// 	},
+			// 	{
+			// 		path:'/forgot',
+			// 		name:'forgot',
+			// 		components:{
+			// 			default:Forgot,
+			// 		},
+			// 	},
+			// 	{
+			// 		path:'/contact',
+			// 		name:'contact',
+			// 		components:{
+			// 			default:Contact,
+			// 		},
+			// 	},
+			// 	{
+			// 		path:'/about',
+			// 		name:'about',
+			// 		components:{
+			// 			default:About,
+			// 		},
+			// 	},
+			// ]
 		},
 		{
 			path:'*',

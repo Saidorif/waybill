@@ -9,7 +9,7 @@
 				</h4>
 		  	</div>
 		  	<div class="card-body">
-	  			<div class="row">
+	  			<!-- <div class="row">
 	  				<div class="col-xl-3 col-lg-4 col-md-6 mb-3" v-if="$can('index', 'DirectionController')">
 	  					<div class="bg-dashboard bg1">
 	  						<router-link class="dashboard-link" to="/crm/direction">
@@ -90,7 +90,7 @@
 				            </router-link>
 	  					</div>
 	  				</div>
-	  			</div>
+	  			</div> -->
 	  			<!-- <div class="row">
 	  				<div class="col-md-6">
 	  					<line-chart></line-chart>
