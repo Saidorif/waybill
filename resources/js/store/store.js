@@ -19,39 +19,9 @@ import {permission} from "./permission.module"
 import {dashboard} from "./dashboard.module"
 import {region} from "./region.module"
 import {area} from "./area.module"
-import {station} from "./station.module"
-import {passport} from "./passport.module"
-import {passportTab} from "./passportTab.module"
-import {direction} from "./direction.module"
-import {typeofdirection} from "./typeofdirection.module"
-import {typeofbus} from "./typeofbus.module"
-import {busclass} from "./busclass.module"
-import {client} from "./client.module"
-import {complaint} from "./complaint.module"
-import {busmodel} from "./busmodel.module"
-import {busbrand} from "./busbrand.module"
-import {application} from "./application.module"
-import {conditionalsign} from "./conditionalsign.module"
-import {tenderannounce} from "./tenderannounce.module"
-import {confirmtender} from "./confirmtender.module"
-import {completedtender} from "./completedtender.module"
-import {checkcontrol} from "./checkcontrol.module"
-import {payment} from "./payment.module"
 import {find} from "./find.module"
-import {apply} from "./apply.module"
-import {protocol} from "./protocol.module"
-import { tarifannounce } from "./tarifannounce.module"
-import { tarifcity } from "./tarifcity.module"
-import { confirmtitul } from "./confirmtitul.module"
-import { confirmtiming } from "./confirmtiming.module"
-import { confirmscheme } from "./confirmscheme.module"
-import { confirmschedule } from "./confirmschedule.module"
 import { page } from "./page.module"
-import { contract } from "./contract.module"
 import { setting } from "./setting.module"
-import { confirmdemand } from "./confirmdemand.module"
-import { oldprotocol } from "./oldprotocol.module"
-import { oldcontract } from "./oldcontract.module"
 
 import { TokenService } from './../services/storage.service'
 
@@ -77,40 +47,10 @@ const store = new Vuex.Store(
 			permission,
 			dashboard,
 			region,
-			passport,
-			passportTab,
 			area,
-			direction,
-			station,
-			typeofdirection,
-			typeofbus,
-			busclass,
-			client,
-			complaint,
-            busmodel,
-            busbrand,
-			application,
-			conditionalsign,
-			tenderannounce,
-			payment,
 			find,
-            confirmtender,
-            completedtender,
-            checkcontrol,
-            protocol,
-            apply,
-            tarifannounce,
-            tarifcity,
-            confirmtitul,
-            confirmtiming,
-            confirmschedule,
-            confirmscheme,
             page,
-            contract,
             setting,
-            confirmdemand,
-            oldprotocol,
-            oldcontract,
 		},
 		state:{
 			rules:[],
@@ -181,6 +121,7 @@ const store = new Vuex.Store(
 			},
 			async profileUser({commit}){
 				try{
+					console.log('ok')
 					const userInfo = await UserService.profileUser();
 					await commit('loginSuccess', userInfo.data);
 					return true
