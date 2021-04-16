@@ -7,7 +7,7 @@ use App\Region;
 use App\Station;
 class Area extends Model
 {
-    protected $fillable = ['name','region_id'];
+    protected $fillable = ['name','region_id','e_id'];
 
     public function region()
     {

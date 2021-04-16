@@ -42,6 +42,7 @@ class CreateUsersTable extends Migration
             $table->string('status')->default('active');
             $table->integer('created_by')->nullable();
             $table->integer('updated_by')->nullable();
+            $table->text('data')->nullable();
             $table->rememberToken();
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();

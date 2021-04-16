@@ -24,6 +24,12 @@ class RoleSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+            [
+                'name' => 'carrier',
+                'label' => 'Tashuvchi',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ];
         foreach ($roles as $key => $value) {
             DB::table('roles')->insert($value);

@@ -44,6 +44,7 @@ class User extends Authenticatable implements JWTSubject
         'trusted_person',
         'updated_by',
         'created_by',
+        'data',
     ];
 
     /**
@@ -53,6 +54,7 @@ class User extends Authenticatable implements JWTSubject
      */
     protected $hidden = [
         'password', 'remember_token',
+        'data',
     ];
 
     /**
@@ -62,6 +64,7 @@ class User extends Authenticatable implements JWTSubject
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'data' => 'array',
     ];
 
     /**
@@ -112,17 +115,17 @@ class User extends Authenticatable implements JWTSubject
     {
         return $this->hasMany(\App\UserCar::class,'user_id');
     }
-    
+
     public function applications()
     {
         return $this->hasMany(\App\Application::class,'user_id');
     }
-    
+
     public function contracts()
     {
         return $this->hasMany(\App\Contract::class,'user_id');
-    }    
-    
+    }
+
     public function direction()
     {
         return $this->hasMany(\App\Direction::class,'created_by');

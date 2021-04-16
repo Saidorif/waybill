@@ -176,7 +176,7 @@ class UserController extends Controller
     {
         $params = $request->all();
         $user = $request->user();
-        $builder = User::query()->where(['role_id' => 9]);
+        $builder = User::query()->where(['role_id' => 3]);
         if($user->role->name != 'admin'){
             $builder->where(['region_id' => $user->region_id]);
         }
@@ -203,7 +203,7 @@ class UserController extends Controller
                 $builder->where('middlename','LIKE','%'.$params['middlename'].'%');
             }
         }
-        $result = $builder->with(['region','area'])->orderBy('id','DESC')->paginate(12);
+        $result = $builder->with(['region','area'])->orderBy('id','DESC')->paginate(20);
 
         return response()->json(['success' => true, 'result' => $result]);
     }
@@ -212,9 +212,9 @@ class UserController extends Controller
     {
         $user = $request->user();
         if($user->role->name == 'admin'){
-            $result = User::where(['role_id' => 9])->with(['region','area'])->find($id);
+            $result = User::where(['role_id' => 3])->with(['region','area'])->find($id);
         }else{
-            $result = User::where(['role_id' => 9])->where(['region_id' => $user->region_id])->with(['region','area'])->find($id);
+            $result = User::where(['role_id' => 3])->where(['region_id' => $user->region_id])->with(['region','area'])->find($id);
         }
         if(!$result){
             return response()->json(['error' => true, 'message' => 'Перевозчик не найден']);
@@ -232,7 +232,7 @@ class UserController extends Controller
 
     public function carrierUpdate(Request $request,$id)
     {
-        $carrier = User::where(['role_id' => 9])->find($id);
+        $carrier = User::where(['role_id' => 3])->find($id);
         if(!$carrier){
             return response()->json(['error' => true, 'message' => 'Пользователь не найден']);
         }

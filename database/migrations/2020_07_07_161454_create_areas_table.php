@@ -17,6 +17,7 @@ class CreateAreasTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('region_id');
             $table->string('name');
+            $table->integer('e_id')->index();
             $table->timestamps();
         });
     }
